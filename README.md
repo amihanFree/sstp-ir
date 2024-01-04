@@ -8,7 +8,7 @@ vanilla js :))
 lottie
 swiperjs
 
-some features
+--some features-- :
 print to pdf
 create nice customize Excel file
 ORM
