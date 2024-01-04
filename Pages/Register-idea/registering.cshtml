@@ -1,0 +1,299 @@
+﻿@page
+@model Event.Pages.Register_idea.RegisteringModel
+@{
+    ViewData["Title"] = " ثبت ایده";
+    var message = ViewData["message"]?.ToString();
+    var error = ViewData["error"]?.ToString();
+}
+<div class="progress">
+      <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="50" class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" style="width: 0%"></div>
+   </div>
+   <div id="qbox-container">
+ <form method="post" class="forming" enctype="multipart/form-data">
+     @if (!string.IsNullOrWhiteSpace(message))
+    {
+        <div class="alert alert-success" role="alert">
+            @message
+        </div>
+    }
+    @if(!string.IsNullOrWhiteSpace(error)) {
+        <div class="alert alert-danger">
+            @Html.ValidationSummary();
+            @error
+        </div>
+    }
+     <div id="steps-container">
+         <div class="step">
+             <div class="col-10 col-sm-8 col-md-4 mx-auto">
+            <img class="img-fluid" src="~/Assets/img/register-form1-min.jpg" alt="رویداد گردشگری پارک علم و فناوری استان سمنان" />
+            </div>
+    <div class="col-md-12 mb-3">
+        <label class="form-label">نام تیم یا شرکت <span class="text-warning"> * </span></label>
+    <input class="form-control" type="text" asp-for="Group.GroupTeamName" placeholder="نام ضروری می باشد" data-val="true" data-val-required="نام تیم یا شرکت"/>
+    <span class="field-validation-valid text-danger" data-valmsg-for="Group.GroupTeamName" data-valmsg-replace="true"></span>
+</div>
+    <div class="row">
+    <div class="col-6 col-sm-6 col-md-4">
+    <label class="form-label"> نام و نام خانوادگی مدیر تیم <span class="text-warning"> * </span></label>
+    <input class="form-control" type="text" asp-for="Group.GroupName" data-val="true" data-val-required="نام مدیرتیم ضروری است"/>
+    <span class="field-validation-valid text-danger" data-valmsg-for="Group.GroupName" data-valmsg-replace="true"></span>
+</div>
+<div class="col-6 col-sm-6 col-md-4">
+    <label class="form-label">ایمیل <span class="text-warning"> * </span></label>
+    <input class="form-control" type="email" value="@Model.UserEmail" disabled/>
+    <input class="form-control" type="email" asp-for="Group.GroupEmail" value="@Model.UserEmail" hidden/>
+</div>
+<div class="col-6 col-sm-6 col-md-4">
+    <label class="form-label">موبایل <span class="text-warning"> * </span></label>
+    <input class="form-control" type="number" asp-for="Group.GroupPhone" data-val="true" data-rule-exactlength="11"  data-val-required="لطفا شماره تماس را وارد نمایید"/>
+    <span class="field-validation-valid text-danger" data-valmsg-for="Group.GroupPhone" data-valmsg-replace="true"></span>
+</div>
+<div class="col-6 col-sm-6 col-md-4">
+    <label class="form-label">رشته تحصیلی <span class="text-warning"> * </span></label>
+    <input class="form-control" type="text" asp-for="Group.GroupFieldStudy" data-val="true" data-val-required="فیلد ضروری است"/>
+    <span class="field-validation-valid text-danger" data-valmsg-for="Group.GroupFieldStudy" data-valmsg-replace="true"></span>
+</div> 
+<div class="col-6 col-sm-6 col-md-4">
+    <label class="form-label">آخرین مدرک تحصیلی <span class="text-warning"> * </span></label>
+    <input class="form-control" type="text" asp-for="Group.GroupLastDegree" data-val="true" data-val-required="فیلد ضروری است"/>
+    <span class="field-validation-valid text-danger" data-valmsg-for="Group.GroupLastDegree" data-valmsg-replace="true"></span>
+</div> 
+<div class="col-6 col-sm-6 col-md-4">
+    <label class="form-label">دانشگاه محل تحصیل <span class="text-warning"> * </span></label>
+    <input class="form-control" type="text" asp-for="Group.GroupCityOfStudy" data-val="true" data-val-required="فیلد ضروری است"/>
+    <span class="field-validation-valid text-danger" data-valmsg-for="Group.GroupCityOfStudy" data-valmsg-replace="true"></span>
+</div> 
+</div>
+<div class="mb-3">
+    <label class="form-label">آدرس <span class="text-warning"> * </span></label>
+    <input class="form-control" type="text" asp-for="Group.GroupAdress" data-val="true" data-val-required="آدرس ضروری است"/>
+    <span class="field-validation-valid text-danger" data-valmsg-for="Group.GroupAdress" data-valmsg-replace="true"></span>
+</div> 
+<div id="mainGroupUser" class="col-12 border border-2 p-4 border-opacity-75 rounded-3">
+    <span class="text-black">
+    اعضای تیم/نماینده شرکت
+    </span>
+    <div class="user-group row">
+          <div class="col-6 col-sm-6 col-md-3 mb-3">
+            <label class="form-label">نام و نام خانوادگی <span class="text-warning"> * </span></label>
+            <input class="form-control" type="text" name="Group.GroupUsers[0].GroupUserName" data-val="true" data-val-required="نام یک فرد یانماینده"/>
+            <span class="field-validation-valid text-danger" data-valmsg-for="Group.GroupUsers[0].GroupUserName" data-valmsg-replace="true"></span>
+            </div>
+            <div class="col-6 col-sm-6 col-md-2 mb-3">
+            <label class="form-label">مدرک تحصیلی و رشته <span class="text-warning"> * </span></label>
+            <input class="form-control" type="text" name="Group.GroupUsers[0].GroupUserDegree" data-val="true" data-val-required="فیلد ضروری است"/>
+            <span class="field-validation-valid text-danger" data-valmsg-for="Group.GroupUsers[0].GroupUserDegree" data-valmsg-replace="true"></span>
+            </div>
+            <div class="col-4 col-sm-6 col-md-2 mb-3">
+            <label class="form-label">دانشگاه محل تحصیل <span class="text-warning"> * </span></label>
+            <input class="form-control" type="text" name="Group.GroupUsers[0].GroupUserCityOfStudy" data-val="true" data-val-required="فیلد ضروری است"/>
+            <span class="field-validation-valid text-danger" data-valmsg-for="Group.GroupUsers[0].GroupUserCityOfStudy" data-valmsg-replace="true"></span>
+            </div>
+            <div class="col-4 col-sm-6 col-md-2 mb-3">
+            <label class="form-label">شغل <span class="text-warning"> * </span></label>
+            <input class="form-control" type="text" name="Group.GroupUsers[0].GroupUserJob" data-val="true" data-val-required="لطفاشغل را بنویسید"/>
+            <span class="field-validation-valid text-danger" data-valmsg-for="Group.GroupUsers[0].GroupUserJob" data-valmsg-replace="true"></span>
+            </div>
+            <div class="col-4 col-sm-6 col-md-3 mb-3">
+            <label class="form-label">تلفن تماس <span class="text-warning"> * </span></label>
+            <input class="form-control" type="number" name="Group.GroupUsers[0].GroupUserPhone" data-val="true" data-val-required="لطفا شماره تماس را وارد نمایید"/>
+            <span class="field-validation-valid text-danger" data-valmsg-for="Group.GroupUsers[0].GroupUserPhone" data-valmsg-replace="true"></span>
+            </div>
+            <hr />
+    </div>
+    </div>
+    <center>
+        <button class="btn btn-small2" type="button" id="add-users">اضافه کردن فرد</button><button class="btn btn-small2" type="button" id="remove-users">پاک کردن</button>
+    </center>
+    <br /><br />
+    <div id="mainGroupProject" class="col-12 border border-2 p-4 border-opacity-75 rounded-3">
+    <span class="text-black mb-3">
+    سوابق تحقیقاتی مسئول واحد و همکاران
+    </span>
+    <br />
+    <div class="project-group row">
+          <div class="col-4 col-sm-4 col-md-2 mb-3">
+            <label class="form-label">عنوان طرح </label>
+            <input class="form-control" type="text" name="Group.GroupProjects[0].GroupPrTitle"/>
+            </div>
+            <div class="col-4 col-sm-4 col-md-2 mb-3">
+            <label class="form-label">زمان اجرا </label>
+            <input class="form-control" type="text" name="Group.GroupProjects[0].GroupPrTime"/>     
+            </div>
+            <div class="col-4 col-sm-4 col-md-2 mb-3">
+            <label class="form-label">اعتبار(ریـال) </label>
+            <input class="form-control" type="text" name="Group.GroupProjects[0].GroupPrPrice" />
+            </div>
+            <div class="col-4 col-sm-4 col-md-2 mb-3">
+            <label class="form-label">کارفرما </label>
+            <input class="form-control" type="text" name="Group.GroupProjects[0].GroupPrJobLeader" />
+            </div>
+            <div class="col-4 col-sm-4 col-md-2 mb-3">
+            <label class="form-label">مجری/مجریان </label>
+            <input class="form-control" type="text" name="Group.GroupProjects[0].GroupPrSeller"/>
+            </div>
+            <div class="col-4 col-sm-4 col-md-2 mb-3">
+            <label class="form-label">وضعیت(پایان یافته یادرحال اجرا) </label>
+            <input class="form-control" type="text" name="Group.GroupProjects[0].GroupPrStatus" />
+            </div>
+            <hr />
+    </div>
+    </div>
+    <center>
+        <button class="btn btn-small2" type="button" id="add-projects">اضافه کردن پروژه</button><button class="btn btn-small2" type="button" id="remove-projects">پاک کردن</button>
+    </center>
+ </div>
+ <div class="step">
+     <div class="col-10 col-sm-8 col-md-4 mx-auto">
+            <img class="img-fluid" src="~/Assets/img/register-form2-min.jpg" alt="رویداد پارک علم و فناوری استان سمنان" />
+            </div>
+<div class="mb-3">
+    <label class="form-label">در صورتی که پیشتر در قالب شرکت یا هسته در یکی از مراکز رشد کشور مستقر بوده‌اید، می‌بایست سوابق خود را در این قسمت ذکر کنید.</label>
+    <textarea asp-for="Group.GroupGrowHistory" class="form-control" text-wrap="normal" rows="5" type="text" placeholder="لطفا در صورت موجود بودن سوابق خود را ذکر کنید"></textarea>
+</div> 
+<div class="mb-3">
+    <label class="form-label">عنوان ایده محوری<span class="text-warning"> * </span></label>
+    <input class="form-control" type="text" asp-for="Group.GroupIdeaTitle" data-val="true" data-val-required="فیلد ضروری"/>
+            <span class="field-validation-valid text-danger" data-valmsg-for="Group.GroupIdeaTitle" data-valmsg-replace="true"></span>
+</div> 
+<div class="md-3">
+    محورهای مرتبط را از لیست پایین انتخاب کنید
+    <br />
+    <div class="check-boxes d-inline-block">
+        <div class="form-check form-switch form-check-inline mb-2">
+  <input class="form-check-input" type="checkbox" id="checkbox-1" value="واقعیت افزوده در گردشگری">
+  <label class="form-check-label" for="checkbox-1">واقعیت افزوده در گردشگری</label>
+</div>
+<div class="form-check form-switch form-check-inline mb-2">
+  <input class="form-check-input" type="checkbox" id="checkbox-2" value="انیمیشن">
+  <label class="form-check-label" for="checkbox-2">انیمیشن</label>
+</div>
+<div class="form-check form-switch form-check-inline mb-2">
+  <input class="form-check-input" type="checkbox" id="checkbox-3" value="تصاویر 360 درجه">
+  <label class="form-check-label" for="checkbox-3">تصاویر 360 درجه</label>
+</div>
+<div class="form-check form-switch form-check-inline mb-2">
+  <input class="form-check-input" type="checkbox" id="checkbox-4" value="واقیت مجازی">
+  <label class="form-check-label" for="checkbox-4">واقیت مجازی</label>
+</div>
+<div class="form-check form-switch form-check-inline mb-2">
+  <input class="form-check-input" type="checkbox" id="checkbox-5" value="سفرهای بومی و محلی">
+  <label class="form-check-label" for="checkbox-5">سفرهای بومی و محلی</label>
+</div>
+<div class="form-check form-switch form-check-inline mb-2">
+  <input class="form-check-input" type="checkbox" id="checkbox-6" value="اقامتگاه">
+  <label class="form-check-label" for="checkbox-6">اقامتگاه</label>
+</div>
+<div class="form-check form-switch form-check-inline mb-2">
+  <input class="form-check-input" type="checkbox" id="checkbox-7" value="راهنمای صوتی گردشگری">
+  <label class="form-check-label" for="checkbox-7">راهنمای صوتی گردشگری</label>
+</div>
+<div class="form-check form-switch form-check-inline mb-2">
+  <input class="form-check-input" type="checkbox" id="checkbox-8" value="اینترنت اشیا در گردشگری و هتل داری">
+  <label class="form-check-label" for="checkbox-8">اینترنت اشیا در گردشگری و هتل داری</label>
+</div>
+<div class="form-check form-switch form-check-inline mb-2">
+  <input class="form-check-input" type="checkbox" id="checkbox-9" value="راهنمای مسافران و گردشگران">
+  <label class="form-check-label" for="checkbox-9">راهنمای مسافران و گردشگران</label>
+</div>
+    </div>
+    <label class="form-label">محور مرتبط <span class="text-warning"> * </span></label>
+    <input class="form-control mydisabled" type="text" asp-for="Group.GroupRelatedTitle" data-val="true" data-val-required="فیلد ضروری" readonly/>
+            <span class="field-validation-valid text-danger" data-valmsg-for="Group.GroupRelatedTitle" data-valmsg-replace="true"></span>
+</div> 
+<div class="mb-3">
+    <label class="form-label">حوزه جغرافیایی اجرای ایده در استان سمنان <span class="text-warning"> * </span></label>
+    <input class="form-control" type="text" asp-for="Group.GroupGeographicalArea" data-val="true" data-val-required="فیلد ضروری"/>
+            <span class="field-validation-valid text-danger" data-valmsg-for="Group.GroupGeographicalArea" data-valmsg-replace="true"></span>
+</div> 
+<div class="mb-3">
+    <label class="form-label">مدت زمان پیش ‌بینی شده برای اجرا <span class="text-warning"> * </span></label>
+    <input class="form-control" type="text" asp-for="Group.GroupDurationOfRun" data-val="true" data-val-required="فیلد ضروری"/>
+            <span class="field-validation-valid text-danger" data-valmsg-for="Group.GroupDurationOfRun" data-valmsg-replace="true"></span>
+</div> 
+<div class="mb-3">
+    <label class="form-label">جامعه هدف و ذینفعان <span class="text-warning"> * </span></label>
+    <input class="form-control" type="text" asp-for="Group.GroupTargetSociety" data-val="true" data-val-required="فیلد ضروری"/>
+            <span class="field-validation-valid text-danger" data-valmsg-for="Group.GroupTargetSociety" data-valmsg-replace="true"></span>
+</div> 
+</div>
+<div class="step">
+    <div class="col-10 col-sm-8 col-md-4 mx-auto">
+            <img class="img-fluid" src="~/Assets/img/register-form3-min.jpg" alt="رویداد پارک علم و فناوری استان سمنان" />
+            </div>
+<div class="mb-3">
+    <label class="form-label">آیا ایده شما دارای ارتباط با بقیه محورهای رویداد یا اثربخشی بر آنها است؟ درصورت پاسخ آری، توضیح دهید <span class="text-warning"> * </span></label>
+    <input class="form-control" type="text" asp-for="Group.GroupHaveConnectionToOther" data-val="true" data-val-required="فیلد ضروری"/>
+            <span class="field-validation-valid text-danger" data-valmsg-for="Group.GroupHaveConnectionToOther" data-valmsg-replace="true"></span>
+</div> 
+<div class="mb-3">
+    <label class="form-label">آیا ایده محوری مبتنی بر نتایج پایان‌نامه متقاضی یا اعضای تیم یا تحت مالکیت مادی یا معنوی سازمان حامی یا سرمایه‌گذار می‌باشد؟ دقیقاً توضیح دهید</label>
+    <textarea asp-for="Group.GroupIntellectualProperty" class="form-control" text-wrap="normal" rows="5" type="text" placeholder="توضیحات"></textarea>
+</div> 
+<div class="mb-3">
+    <label class="form-label">موضوع ایده یا طرح و اهداف اصلی آن را بنویسید. از ارائه‌ی اطلاعات کلی و پراکنده و چندشاخه و فاقد قابلیت ارزیابی پرهیز کنید
+در مورد نوآورانه بودن ایده/ زمینه کاری آن توضیح دهید.
+<span class="text-warning"> * </span></label>
+    <textarea asp-for="Group.GroupInnovativenessOfTheIdea" class="form-control" text-wrap="normal" rows="5" type="text" placeholder="اهداف اصلی طرح" data-val="true" data-val-required="فیلد ضروری"></textarea>
+    <span class="field-validation-valid text-danger" data-valmsg-for="Group.GroupInnovativenessOfTheIdea" data-valmsg-replace="true"></span>
+</div> 
+<div class="mb-3">
+    <label class="form-label">میزان پیشرفت طرح در عناوین زیر را شرح دهید ( تعریف ایده و طراحی محصول تدوین دانش فنی نمونه سازی تدوین طرح تجاری تولید نیمه صنعتی بازاریابی و جذب مشارکت مالی) <span class="text-warning"> * </span></label>
+    <textarea asp-for="Group.GroupProjectProgress" class="form-control" text-wrap="normal" rows="4" type="text" placeholder="میزان پیشرفت" data-val="true" data-val-required="فیلد ضروری"></textarea>
+    <span class="field-validation-valid text-danger" data-valmsg-for="Group.GroupProjectProgress" data-valmsg-replace="true"></span>
+</div> 
+</div>
+<div class="step">
+    <div class="col-10 col-sm-8 col-md-4 mx-auto">
+            <img class="img-fluid" src="~/Assets/img/register-form4-min.jpg" alt="رویداد پارک علم و فناوری استان سمنان" />
+            </div>
+<div class="mb-3">
+    <label class="form-label">توجیه فنی و اقتصادی و امکان‌پذیری ایده خود را بیان ‌نمایید. ارائه‌ی اطلاعات دقیق در این بخش (شامل پیش‌بینی هزینه‌ها و درآمدها، حجم بازار هدف (مصرف‌کنندگان و مشتریان خصوصی یا دولتی)، قیمت تمام‌شده‌ی محصول یا خدمت و مقایسه با نمونه‌های داخلی و خارجی، کانال‌های توزیع، هزینه‌ی دستیابی به مشتری، مدل درآمدزایی، نقطه‌ی سربه‌سر و ...) اهمیت زیادی در پذیرش شما دارد. <span class="text-warning"> * </span> </label>
+    <textarea asp-for="Group.GroupFinishedPrice" class="form-control" text-wrap="normal" rows="4" type="text" placeholder="شرح دهید" data-val="true" data-val-required="فیلد ضروری"></textarea>
+    <span class="field-validation-valid text-danger" data-valmsg-for="Group.GroupFinishedPrice" data-valmsg-replace="true"></span>
+</div> 
+<div class="mb-3">
+    <label class="form-label">رقبای شما در بازار چه کسانی هستند؟ نقاط قوت و ضعف رقبا از نظر شما چیست و وجه تمایز و شاخص اصلی که شما را از رقبای دیگر متمایز می‌کند چه خواهد بود؟ <span class="text-warning"> * </span></label>
+    <textarea asp-for="Group.GroupCompetitorsInMarket" class="form-control" text-wrap="normal" rows="3" type="text" placeholder="رقبای شما دربازار" data-val="true" data-val-required="فیلد ضروری"></textarea>
+    <span class="field-validation-valid text-danger" data-valmsg-for="Group.GroupCompetitorsInMarket" data-valmsg-replace="true"></span>
+</div> 
+<div class="mb-3">
+    <label class="form-label">چالش‌ها و خطراتی که کسب‌وکار شما را مورد تهدید قرار می‌دهد و استراتژی شما برای غلبه بر آن‌ها چیست؟ <span class="text-warning"> * </span></label>
+     <textarea asp-for="Group.GroupChallengesAndRisks" class="form-control" text-wrap="normal" rows="3" type="text" placeholder="استراتژی شما" data-val="true" data-val-required="فیلد ضروری"></textarea>
+     <span class="field-validation-valid text-danger" data-valmsg-for="Group.GroupChallengesAndRisks" data-valmsg-replace="true"></span>
+</div> 
+<div class="mb-3">
+    <p>چنانچه پیوست دارید آپلود نمایید</p>
+    <p>حداکثر حجم 150  مگابایت</p>
+    <label class="form-label">آپلود فایل اصلی</label>
+    <input class="form-control-file" type="file" name="Group.file">
+    <p id="file-error" class="text-danger"></p>
+</div>
+</div>
+<div id="success">
+               <div class="mt-5">
+                  <h4>فرم شما آپلود شد</h4>
+                  <p>اگر موارد ضروری پر نشده باشد فرم شما بارگذاری می شود ولی در پایگاه داده ذخیره نخواهد شد</p>
+                 
+               </div>
+            </div>
+         </div>
+         <div id="q-box__buttons">
+            <button id="prev-btn" type="button">< گام قبلی</button> 
+            <button id="next-btn" type="button">گام بعدی</button> 
+            <button id="submit-btn" type="submit" class="">ارسال</button>
+         </div>  
+</form>
+
+</div>
+
+<div id="preloader-wrapper">
+   <div id="preloader"></div>
+   <div class="preloader-section section-left"></div>
+   <div class="preloader-section section-right"></div>
+</div>
+@section Scripts {
+        @{await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
+        <script src="~/js/step-form.min.js"></script>
+        
+}

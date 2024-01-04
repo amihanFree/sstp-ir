@@ -1,0 +1,45 @@
+﻿@page
+@model Event.Pages.Admin.UsersModel
+@{
+
+}
+<div class="container">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+            <th scope="col">ایمیل</th>
+            <th scope="col">شماره همراه</th>
+            <th scope="col">نقش</th>
+            <th scope="col">حذف کاربر</th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach(var user in Model.UsersWithRoles)
+        {
+            <tr>
+                <td>@user.User.Email</td>
+                <td>@user.User.PhoneNumber</td>
+                    <td>@foreach (var role in user.Roles)
+                        {
+                            @role <br />
+                        }</td>
+                    <td>
+                        @if (user.Roles.Contains("Admin"))
+                        {
+                           <button disabled type="submit" class="btn btn-danger">حذف</button>
+                        }
+                        else
+                        {
+                            
+                            <form method="post">
+                            <input type="hidden" name="userId" value="@user.User.Id" />
+                            <button type="submit" class="btn btn-danger">حذف</button>
+                            </form>
+                        }
+
+                    </td>
+            </tr>
+                   }
+        </tbody>
+    </table>
+</div>

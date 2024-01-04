@@ -1,0 +1,22 @@
+﻿@page
+@model RegisterConfirmationModel
+@{
+    ViewData["Title"] = "تایید ثبتنام";
+}
+
+<h1>@ViewData["Title"]</h1>
+@{
+    if (@Model.DisplayConfirmAccountLink)
+    {
+<p>
+    با موفقیت ثبتنام کردید.به سایت رویداد پارک علم و فناوری استان سمنان خوش آمدید
+</p>
+    }
+    else
+    {
+<p>
+        لطفا ایمیل خود را چک کنید
+</p>
+    }
+}
+

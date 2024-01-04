@@ -1,0 +1,25 @@
+﻿@page
+@model Event.Pages.Admin.IndexModel
+@{
+    ViewData["Title"] = " مدیریت";
+    var message = ViewData["message"]?.ToString();
+}
+@section Styles {
+}
+<h1>@ViewData["Title"]</h1>
+<div class="container">
+    <div class="col-12">
+        <div class="col-8 mx-auto">
+            <div style="border-radius:20px;overflow:hidden; padding:2em; box-shadow:0 0 0 7px rgb(255 255 255 / 60%), 0 0 10px 3px #0c706e, 11px -5px 17px -1px #092f31;">
+                <a class="btn btn-success" href="/admin/group">مشاهده گروه ها</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-12">
+        <div class="col-8 mx-auto">
+            <div style="border-radius:20px;overflow:hidden; padding:2em; box-shadow:0 0 0 7px rgb(255 255 255 / 60%), 0 0 10px 3px #0c706e, 11px -5px 17px -1px #092f31;">
+                <a class="btn btn-success" href="/admin/Users">مشاهده کاربران</a>
+            </div>
+        </div>
+    </div>
+</div>

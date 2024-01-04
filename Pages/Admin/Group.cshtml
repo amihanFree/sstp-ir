@@ -1,0 +1,52 @@
+﻿@page
+@model Event.Pages.Admin.GroupModel
+@{
+}
+<div class="container">
+    <div class="row">
+        <table class="table table-striped">
+             <thead>
+            <tr>
+                <th scope="col">نام تیم/شرکت</th>
+                <th scope="col">ایمیل</th>
+                <th scope="col">موبایل</th>
+                <th scope="col">نام فایل</th>
+                <th scope="col">دانلود</th>
+                <th scope="col">حذف</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var grp in Model.Allgroups)
+            {
+                <tr>
+                    <td scope="row">@grp.GroupTeamName</td>
+                    <td>@grp.GroupEmail</td>
+                    <td>@grp.GroupPhone</td>
+                    <td>@grp.GroupFile</td>
+                    <td>
+                            @if (grp.GroupFile != null)
+                            {
+                                <a href="../upload/@grp.GroupFile" download>دانلود</a>
+                            }
+                        </td>
+                        <td>
+                        <a asp-page="./GroupDetails" asp-route-id="@grp.Id">مشاهده</a>
+                    </td>
+                    <td>
+                         <form method="post">
+                            <input type="hidden" name="groupId" value="@grp.Id" />
+                            <button class="btn btn-danger" type="submit">حذف</button>
+                         </form>
+                    </td>
+
+                </tr>
+            }
+        </tbody>
+        </table>
+    </div>
+</div>
+
+
+
+
+

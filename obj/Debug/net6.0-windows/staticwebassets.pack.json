@@ -1,0 +1,549 @@
+{
+  "Files": [
+    {
+      "Id": "E:\\projects\\Event\\Event\\obj\\Debug\\net6.0-windows\\scopedcss\\projectbundle\\Event.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Event.bundle.scp.css"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\Assets\\bg-login.jpg",
+      "PackagePath": "staticwebassets\\Assets\\bg-login.jpg"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\Assets\\eslimi.png",
+      "PackagePath": "staticwebassets\\Assets\\eslimi.png"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\Assets\\img\\0-min.jpg",
+      "PackagePath": "staticwebassets\\Assets\\img\\0-min.jpg"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\Assets\\img\\0.png",
+      "PackagePath": "staticwebassets\\Assets\\img\\0.png"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\Assets\\img\\1-min.jpg",
+      "PackagePath": "staticwebassets\\Assets\\img\\1-min.jpg"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\Assets\\img\\2-min.jpg",
+      "PackagePath": "staticwebassets\\Assets\\img\\2-min.jpg"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\Assets\\img\\3-min.jpg",
+      "PackagePath": "staticwebassets\\Assets\\img\\3-min.jpg"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\Assets\\img\\4-min.jpg",
+      "PackagePath": "staticwebassets\\Assets\\img\\4-min.jpg"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\Assets\\img\\5-min.jpg",
+      "PackagePath": "staticwebassets\\Assets\\img\\5-min.jpg"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\Assets\\img\\6-min.jpg",
+      "PackagePath": "staticwebassets\\Assets\\img\\6-min.jpg"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\Assets\\img\\7-min.jpg",
+      "PackagePath": "staticwebassets\\Assets\\img\\7-min.jpg"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\Assets\\img\\8-min.jpg",
+      "PackagePath": "staticwebassets\\Assets\\img\\8-min.jpg"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\Assets\\img\\9-min.jpg",
+      "PackagePath": "staticwebassets\\Assets\\img\\9-min.jpg"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\Assets\\img\\big (0).jpg",
+      "PackagePath": "staticwebassets\\Assets\\img\\big (0).jpg"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\Assets\\img\\big (1).jpg",
+      "PackagePath": "staticwebassets\\Assets\\img\\big (1).jpg"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\Assets\\img\\big (2).jpg",
+      "PackagePath": "staticwebassets\\Assets\\img\\big (2).jpg"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\Assets\\img\\big (3).jpg",
+      "PackagePath": "staticwebassets\\Assets\\img\\big (3).jpg"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\Assets\\img\\big (4).jpg",
+      "PackagePath": "staticwebassets\\Assets\\img\\big (4).jpg"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\Assets\\img\\big (5).jpg",
+      "PackagePath": "staticwebassets\\Assets\\img\\big (5).jpg"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\Assets\\img\\big (6).jpg",
+      "PackagePath": "staticwebassets\\Assets\\img\\big (6).jpg"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\Assets\\img\\big (7).jpg",
+      "PackagePath": "staticwebassets\\Assets\\img\\big (7).jpg"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\Assets\\img\\big (8).jpg",
+      "PackagePath": "staticwebassets\\Assets\\img\\big (8).jpg"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\Assets\\img\\big (9).jpg",
+      "PackagePath": "staticwebassets\\Assets\\img\\big (9).jpg"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\Assets\\img\\register-form1-min.jpg",
+      "PackagePath": "staticwebassets\\Assets\\img\\register-form1-min.jpg"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\Assets\\img\\register-form2-min.jpg",
+      "PackagePath": "staticwebassets\\Assets\\img\\register-form2-min.jpg"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\Assets\\img\\register-form3-min.jpg",
+      "PackagePath": "staticwebassets\\Assets\\img\\register-form3-min.jpg"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\Assets\\img\\register-form4-min.jpg",
+      "PackagePath": "staticwebassets\\Assets\\img\\register-form4-min.jpg"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\Assets\\iran-travel.json",
+      "PackagePath": "staticwebassets\\Assets\\iran-travel.json"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\Assets\\logos\\sponser-logo-1.png",
+      "PackagePath": "staticwebassets\\Assets\\logos\\sponser-logo-1.png"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\Assets\\logos\\sponser-logo-2.png",
+      "PackagePath": "staticwebassets\\Assets\\logos\\sponser-logo-2.png"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\Assets\\logos\\sponser-logo-3.png",
+      "PackagePath": "staticwebassets\\Assets\\logos\\sponser-logo-3.png"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\Assets\\logos\\sponser-logo-4.png",
+      "PackagePath": "staticwebassets\\Assets\\logos\\sponser-logo-4.png"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\Assets\\logos\\sponser-logo-5.png",
+      "PackagePath": "staticwebassets\\Assets\\logos\\sponser-logo-5.png"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\Assets\\logos\\sponser-logo-7.png",
+      "PackagePath": "staticwebassets\\Assets\\logos\\sponser-logo-7.png"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\Assets\\logos\\sponser-logo-8.png",
+      "PackagePath": "staticwebassets\\Assets\\logos\\sponser-logo-8.png"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\Assets\\mosque.jpg",
+      "PackagePath": "staticwebassets\\Assets\\mosque.jpg"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\Assets\\register-form.json",
+      "PackagePath": "staticwebassets\\Assets\\register-form.json"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\Assets\\sstp-logo.png",
+      "PackagePath": "staticwebassets\\Assets\\sstp-logo.png"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\Assets\\turism_event3.png",
+      "PackagePath": "staticwebassets\\Assets\\turism_event3.png"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\android-chrome-96x96.png",
+      "PackagePath": "staticwebassets\\android-chrome-96x96.png"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\apple-touch-icon-120x120.png",
+      "PackagePath": "staticwebassets\\apple-touch-icon-120x120.png"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\apple-touch-icon-60x60.png",
+      "PackagePath": "staticwebassets\\apple-touch-icon-60x60.png"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\apple-touch-icon-76x76.png",
+      "PackagePath": "staticwebassets\\apple-touch-icon-76x76.png"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\apple-touch-icon.png",
+      "PackagePath": "staticwebassets\\apple-touch-icon.png"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\browserconfig.xml",
+      "PackagePath": "staticwebassets\\browserconfig.xml"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\css\\event-page.css",
+      "PackagePath": "staticwebassets\\css\\event-page.css"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\css\\fonts\\iransansweb(fanum).eot",
+      "PackagePath": "staticwebassets\\css\\fonts\\iransansweb(fanum).eot"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\css\\fonts\\iransansweb(fanum).ttf",
+      "PackagePath": "staticwebassets\\css\\fonts\\iransansweb(fanum).ttf"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\css\\fonts\\iransansweb(fanum).woff",
+      "PackagePath": "staticwebassets\\css\\fonts\\iransansweb(fanum).woff"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\css\\fonts\\iransansweb(fanum).woff2",
+      "PackagePath": "staticwebassets\\css\\fonts\\iransansweb(fanum).woff2"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\css\\fonts\\iransansweb(fanum)_bold.eot",
+      "PackagePath": "staticwebassets\\css\\fonts\\iransansweb(fanum)_bold.eot"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\css\\fonts\\iransansweb(fanum)_bold.ttf",
+      "PackagePath": "staticwebassets\\css\\fonts\\iransansweb(fanum)_bold.ttf"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\css\\fonts\\iransansweb(fanum)_bold.woff",
+      "PackagePath": "staticwebassets\\css\\fonts\\iransansweb(fanum)_bold.woff"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\css\\fonts\\iransansweb(fanum)_bold.woff2",
+      "PackagePath": "staticwebassets\\css\\fonts\\iransansweb(fanum)_bold.woff2"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\css\\fonts\\iransansweb(fanum)_medium (1).woff",
+      "PackagePath": "staticwebassets\\css\\fonts\\iransansweb(fanum)_medium (1).woff"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\css\\fonts\\iransansweb(fanum)_medium.eot",
+      "PackagePath": "staticwebassets\\css\\fonts\\iransansweb(fanum)_medium.eot"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\css\\fonts\\iransansweb(fanum)_medium.ttf",
+      "PackagePath": "staticwebassets\\css\\fonts\\iransansweb(fanum)_medium.ttf"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\css\\fonts\\iransansweb(fanum)_medium.woff",
+      "PackagePath": "staticwebassets\\css\\fonts\\iransansweb(fanum)_medium.woff"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\css\\site.min.css",
+      "PackagePath": "staticwebassets\\css\\site.min.css"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\css\\site2.min.css",
+      "PackagePath": "staticwebassets\\css\\site2.min.css"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\favicon-16x16.png",
+      "PackagePath": "staticwebassets\\favicon-16x16.png"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\favicon-32x32.png",
+      "PackagePath": "staticwebassets\\favicon-32x32.png"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\js\\first-page.min.js",
+      "PackagePath": "staticwebassets\\js\\first-page.min.js"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\js\\index.bundle.min.js",
+      "PackagePath": "staticwebassets\\js\\index.bundle.min.js"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\js\\jquery.countdown.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.countdown.min.js"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\js\\lottie-player.js",
+      "PackagePath": "staticwebassets\\js\\lottie-player.js"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\js\\step-form.min.js",
+      "PackagePath": "staticwebassets\\js\\step-form.min.js"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\js\\underscore-min.js",
+      "PackagePath": "staticwebassets\\js\\underscore-min.js"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\mstile-150x150.png",
+      "PackagePath": "staticwebassets\\mstile-150x150.png"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\safari-pinned-tab.svg",
+      "PackagePath": "staticwebassets\\safari-pinned-tab.svg"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\site.webmanifest",
+      "PackagePath": "staticwebassets\\site.webmanifest"
+    },
+    {
+      "Id": "E:\\projects\\Event\\Event\\wwwroot\\upload\\638302615780233954_نامه سر برگ دار.jpg",
+      "PackagePath": "staticwebassets\\upload\\638302615780233954_نامه سر برگ دار.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0-windows\\staticwebassets\\msbuild.Event.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0-windows\\staticwebassets\\msbuild.build.Event.props",
+      "PackagePath": "build\\Event.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0-windows\\staticwebassets\\msbuild.buildMultiTargeting.Event.props",
+      "PackagePath": "buildMultiTargeting\\Event.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0-windows\\staticwebassets\\msbuild.buildTransitive.Event.props",
+      "PackagePath": "buildTransitive\\Event.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

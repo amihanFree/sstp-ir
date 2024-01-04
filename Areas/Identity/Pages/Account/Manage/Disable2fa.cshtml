@@ -1,0 +1,24 @@
+﻿@page
+@model Disable2faModel
+@{
+    ViewData["Title"] = "غیرفعال کردن ورود دومرحله ای";
+    ViewData["ActivePage"] = ManageNavPages.TwoFactorAuthentication;
+}
+
+<partial name="_StatusMessage" for="StatusMessage" />
+<h3>@ViewData["Title"]</h3>
+
+<div class="alert alert-warning" role="alert">
+    <p>
+        <strong>در این بخش تنها ورود دومرحله ای غیر فعال میشود نه اکانت شما</strong>
+    </p>
+    <p>
+        غیر فعال کردن ورود مرحله ای کلید دسترسی شما را تغییر نمیدهد اما اگر مایل به تغییر کلید و توکن جدید هستید روی لینک کلیک کنید <a asp-page="./ResetAuthenticator">تغییر توکن و کلید</a>
+    </p>
+</div>
+
+<div>
+    <form method="post">
+        <button class="btn btn-danger" type="submit">غیرفعال کردن دومرحله ای</button>
+    </form>
+</div>

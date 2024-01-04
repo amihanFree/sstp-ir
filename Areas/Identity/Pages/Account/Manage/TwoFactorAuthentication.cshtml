@@ -1,0 +1,71 @@
+﻿@page
+@using Microsoft.AspNetCore.Http.Features
+@model TwoFactorAuthenticationModel
+@{
+    ViewData["Title"] = "ورود دومرحله ای";
+    ViewData["ActivePage"] = ManageNavPages.TwoFactorAuthentication;
+}
+
+<partial name="_StatusMessage" for="StatusMessage" />
+<h3>@ViewData["Title"]</h3>
+@{
+    var consentFeature = HttpContext.Features.Get<ITrackingConsentFeature>();
+    @if (consentFeature?.CanTrack ?? true)
+    {
+        @if (Model.Is2faEnabled)
+        {
+            if (Model.RecoveryCodesLeft == 0)
+            {
+                <div class="alert alert-danger">
+                    <strong>شما رمز دومرحله ای ندارید</strong>
+                    <p>این رمز ضروری نیست اما میتوانید توسط این لینک رمز دومرحله ای خود را فعال کنید<a asp-page="./GenerateRecoveryCodes">ساختن ریکاوری کد اکانت</a></p>
+                </div>
+            }
+            else if (Model.RecoveryCodesLeft == 1)
+            {
+                <div class="alert alert-danger">
+                    <strong>شما 1 ریکاوری کد دارید</strong>
+                    <p>شما میتوانید کد جدید بگیرید <a asp-page="./GenerateRecoveryCodes">ساخت مجدد کد</a>.</p>
+                </div>
+            }
+            else if (Model.RecoveryCodesLeft <= 3)
+            {
+                <div class="alert alert-warning">
+                    <strong>شما تعداد @Model.RecoveryCodesLeft ریکاوری کد استفاده کردید</strong>
+                    <p>شما باید <a asp-page="./GenerateRecoveryCodes">کد ریکاوری جدید تولید کنید</a>.</p>
+                </div>
+            }
+
+            if (Model.IsMachineRemembered)
+            {
+                <form method="post" style="display: inline-block">
+                    <button type="submit" class="btn btn-primary">فراموشی این مرورگر</button>
+                </form>
+            }
+            <a asp-page="./Disable2fa" class="btn btn-primary">غیرفعال کردن</a>
+            <a asp-page="./GenerateRecoveryCodes" class="btn btn-primary">بازیابی کدها</a>
+        }
+
+        <h4>اپلیکیشن احراز</h4>
+        @if (!Model.HasAuthenticator)
+        {
+            <a id="enable-authenticator" asp-page="./EnableAuthenticator" class="btn btn-primary">اضافه کردن اپلیکیشن</a>
+        }
+        else
+        {
+            <a id="enable-authenticator" asp-page="./EnableAuthenticator" class="btn btn-primary">تنظیم اپلیکیشن احراز</a>
+            <a id="reset-authenticator" asp-page="./ResetAuthenticator" class="btn btn-primary">ریست کردن اپ</a>
+        }
+    }
+    else
+    {
+        <div class="alert alert-danger">
+            <strong>شما قوانین مربوطه را مطالعه نکردید</strong>
+            <p>باید قبل از شروع قوانین این صفحه را مطالعه کنید</p>
+        </div>
+    }
+}
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

@@ -1,0 +1,40 @@
+﻿@page
+@model Event.Areas.Identity.Pages.Account.Manage.UserEventDataModel
+@{
+    ViewData["Title"] = "رویدادهای شما";
+    ViewData["IsActive"] = "active";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>رویدادهای تایید شده شما اینجا نمایش داده می شود</p>
+@foreach (var userForm in Model.FormData){
+    <div class="row">
+        <table class="table table-striped">
+             <thead>
+            <tr>
+                <th scope="col">نام رویداد</th>
+                <th scope="col">نام تیم/شرکت</th>
+                <th scope="col">عنوان ایده محوری</th>
+                <th scope="col">عنوان مرتبط</th>
+                <th scope="col">ویرایش</th>
+            </tr>
+        </thead>
+        <tbody>
+
+                <tr>
+                    <td scope="row">رویداد گردشگری</td>
+                        <td>@userForm.GroupTeamName</td>
+                    <td>@userForm.GroupIdeaTitle</td>
+                    <td>@userForm.GroupRelatedTitle</td>
+                   
+                      <td>
+                        <a class="btn btn-success" asp-page="../../../Register-idea/update" asp-route-id="@userForm.Id">ویرایش</a>
+                    </td>
+                    
+
+                </tr>
+            
+        </tbody>
+        </table>
+    </div>
+}

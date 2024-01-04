@@ -1,0 +1,305 @@
+﻿@page
+@model Event.Pages.Admin.GroupDetailsModel
+@{
+}
+@section Styles {
+    <style type="text/css" media="print">
+    
+
+    body 
+    {
+        background-color:#FFFFFF; 
+        margin: 0px;
+   }
+   footer {
+       display:none;
+   }
+   header {
+       display:none;
+   }
+   a.btn.btn-small2.nvlink-register, button.btn.btn-small2{
+       display:none;
+   }
+</style>
+}
+<div class="conainer">
+    <div class="row">
+        <div class="col col-md-12">
+            <div class="card">
+                <center>
+                <a class="btn btn-small2 nvlink-register" asp-page-handler="Export" asp-route-id="@Model.GroupDetails.Id">خروجی اکسل</a><button class="btn btn-small2" onClick="window.print()">چاپ
+</button>
+                </center>
+                <div class="card-body">
+                    <h5 class="d-inline-block">نام گروه:</h5><h6 class="card-title d-inline-block">@Model.GroupDetails.GroupTeamName </h6>
+                    <br />
+                    <strong>
+                        آدرس</strong>
+                    <p>@Model.GroupDetails.GroupAdress</p>
+                    
+                    </div>
+                    </div>
+                    <div class="card">
+                         <table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">نام و نام خانوادگی مدیرتیم</th>
+      <th scope="col">ایمیل</th>
+      <th scope="col">موبایل</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>@Model.GroupDetails.GroupName</td>
+      <td>@Model.GroupDetails.GroupEmail</td>
+      <td>@Model.GroupDetails.GroupPhone</td>
+    </tr> 
+  </tbody>
+</table>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">رشته تحصیلی</th>
+      <th scope="col">آخرین مدرک</th>
+      <th scope="col">دانشگاه </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>@Model.GroupDetails.GroupFieldStudy</td>
+      <td>@Model.GroupDetails.GroupLastDegree</td>
+      <td>@Model.GroupDetails.GroupCityOfStudy</td>
+    </tr> 
+  </tbody>
+</table>
+<br />
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">در صورتی که پیشتر در قالب شرکت یا هسته در یکی از مراکز رشد کشور مستقر بوده‌اید، می‌بایست سوابق خود را در این قسمت ذکر کنید.</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+          <td>
+              @Model.GroupDetails.GroupGrowHistory
+          </td>      
+    </tr> 
+  </tbody>
+</table>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">عنوان ایده محوری</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+          <td>
+              @Model.GroupDetails.GroupIdeaTitle
+          </td>      
+    </tr> 
+  </tbody>
+</table>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">محور مرتبط</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+          <td>
+              @Model.GroupDetails.GroupRelatedTitle
+          </td>      
+    </tr> 
+  </tbody>
+</table>
+<br />
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">حوزه جغرافیایی اجرای ایده در استان سمنان</th>
+      <th scope="col">جامعه هدف و ذینفعان</th>
+      <th scope="col">مدت زمان پیش ‌بینی شده برای اجرا</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+          <td>
+              @Model.GroupDetails.GroupGeographicalArea
+          </td>
+          <td>
+              @Model.GroupDetails.GroupTargetSociety
+          </td> 
+          <td>
+              @Model.GroupDetails.GroupDurationOfRun
+          </td> 
+    </tr> 
+  </tbody>
+</table>
+<br />
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">آیا ایده شما دارای ارتباط با بقیه محورهای رویداد یا اثربخشی بر آنها است؟ درصورت پاسخ آری، توضیح دهید</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+        <td>@Model.GroupDetails.GroupHaveConnectionToOther</td>       
+    </tr> 
+  </tbody>
+</table>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">آیا ایده محوری مبتنی بر نتایج پایان‌نامه متقاضی یا اعضای تیم یا تحت مالکیت مادی یا معنوی سازمان حامی یا سرمایه‌گذار می‌باشد؟ دقیقاً توضیح دهید</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+        <td>@Model.GroupDetails.GroupIntellectualProperty</td>       
+    </tr> 
+  </tbody>
+</table>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">موضوع ایده یا طرح و اهداف اصلی آن را بنویسید. از ارائه‌ی اطلاعات کلی و پراکنده و چندشاخه و فاقد قابلیت ارزیابی پرهیز کنید در مورد نوآورانه بودن ایده/ زمینه کاری آن توضیح دهید. </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+        <td>@Model.GroupDetails.GroupInnovativenessOfTheIdea</td>       
+    </tr> 
+  </tbody>
+</table>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">میزان پیشرفت طرح در عناوین زیر را شرح دهید ( تعریف ایده و طراحی محصول تدوین دانش فنی نمونه سازی تدوین طرح تجاری تولید نیمه صنعتی بازاریابی و جذب مشارکت مالی)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+        <td>@Model.GroupDetails.GroupProjectProgress</td>       
+    </tr> 
+  </tbody>
+</table>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">توجیه فنی و اقتصادی و امکان‌پذیری ایده خود را بیان ‌نمایید. ارائه‌ی اطلاعات دقیق در این بخش (شامل پیش‌بینی هزینه‌ها و درآمدها، حجم بازار هدف (مصرف‌کنندگان و مشتریان خصوصی یا دولتی)، قیمت تمام‌شده‌ی محصول یا خدمت و مقایسه با نمونه‌های داخلی و خارجی، کانال‌های توزیع، هزینه‌ی دستیابی به مشتری، مدل درآمدزایی، نقطه‌ی سربه‌سر و ...) اهمیت زیادی در پذیرش شما دارد. </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+        <td>@Model.GroupDetails.GroupFinishedPrice</td>       
+    </tr> 
+  </tbody>
+</table>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">رقبای شما در بازار چه کسانی هستند؟ نقاط قوت و ضعف رقبا از نظر شما چیست و وجه تمایز و شاخص اصلی که شما را از رقبای دیگر متمایز می‌کند چه خواهد بود؟</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+        <td>@Model.GroupDetails.GroupCompetitorsInMarket</td>       
+    </tr> 
+  </tbody>
+</table>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">چالش‌ها و خطراتی که کسب‌وکار شما را مورد تهدید قرار می‌دهد و استراتژی شما برای غلبه بر آن‌ها چیست؟</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+        <td>@Model.GroupDetails.GroupChallengesAndRisks</td>       
+    </tr> 
+  </tbody>
+</table>
+
+                    </div>
+        </div>
+    </div>
+    <br />
+    <div class="col-12 col-md-12">
+        <div class="card">
+            <div class="card-header">افراد گروه</div>
+            <div class="card-body">
+                    <table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">نام و نام خانوادگی</th>
+      <th scope="col">مدرک تحصیلی</th>
+      <th scope="col">دانشگاه</th>
+       <th scope="col">شغل کنونی</th>
+       <th scope="col">شماره تماس</th>
+    </tr>
+  </thead>
+  <tbody>
+      @foreach (var grpuser in Model.GroupDetails.GroupUsers){
+    <tr>
+      <th scope="row"></th>
+      <td>@grpuser.GroupUserName</td>
+      <td>@grpuser.GroupUserDegree</td>
+      <td>@grpuser.GroupUserCityOfStudy</td>
+      <td>@grpuser.GroupUserJob</td>
+      <td>@grpuser.GroupUserPhone</td>
+    </tr>
+        }
+    
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+<br />  
+            <div class="col-12 col-md-12">
+    <div class"card">
+        <div class="card-header">
+            پروژه های این تیم
+        </div>
+        <div class="card-body">
+            <table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">عنوان طرح</th>
+      <th scope="col">زمان اجرا</th>
+      <th scope="col">اعتبار</th>
+       <th scope="col">کارفرما</th>
+       <th scope="col">مجریان</th>
+       <th scope="col">وضعیت پروژه</th>
+    </tr>
+  </thead>
+  <tbody>
+      @foreach (var grpprg in Model.GroupDetails.GroupProjects){
+    <tr>
+      <th scope="row"></th>
+      <td>@grpprg.GroupPrTitle</td>
+      <td>@grpprg.GroupPrTime</td>
+      <td>@grpprg.GroupPrPrice</td>
+      <td>@grpprg.GroupPrJobLeader</td>
+      <td>@grpprg.GroupPrSeller</td>
+      <td>@grpprg.GroupPrStatus</td>
+    </tr>
+        }
+    
+  </tbody>
+</table>
+        </div>
+    </div>
+    </div>
+    <center>
+         <a class="btn btn-small2 nvlink-register" asp-page-handler="Export" asp-route-id="@Model.GroupDetails.Id">خروجی اکسل</a><button class="btn btn-small2" onClick="window.print()">چاپ
+</button>
+    </center>
+
+</div>

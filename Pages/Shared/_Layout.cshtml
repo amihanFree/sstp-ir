@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <title>@ViewData["Title"] - رویدادها</title>
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon.png?v=2">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=2">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=2">
+<link rel="manifest" href="/site.webmanifest?v=2">
+<link rel="mask-icon" href="/safari-pinned-tab.svg?v=2" color="#5bbad5">
+<link rel="shortcut icon" href="/favicon.ico?v=2" type="image/x-icon">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<meta name="msapplication-TileColor" content="#0a4a4b">
+<meta name="theme-color" content="#f5fbff">
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="preload" href="~/css/fonts/iransansweb(fanum).woff" as="font" type="font/woff" crossorigin="">
+    <link rel="preload" href="~/css/fonts/iransansweb(fanum)_medium.woff" as="font" type="font/woff" crossorigin="">
+    <link rel="preload" href="~/css/fonts/iransansweb(fanum)_bold.woff" as="font" type="font/woff" crossorigin="">
+    <link rel="stylesheet" href="~/css/site2.min.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Event.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <script src="~/js/lottie-player.js"></script>
+        @RenderSection("Styles", required: false)
+    
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow sticky-top mb-3">
+            <div class="container">
+                <a class="navbar-brand" asp-area="" asp-page="/Index">رویداد</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">خانه</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white nvlink-register" asp-area="" asp-page="/register-idea/registering">ثبت نام رویداد</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/challenges">چالش ها</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/events">رویدادها</a>
+                        </li>
+                    </ul>
+                    <partial name="_LoginPartial" />
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted mt-2">
+
+       
+
+        <div class="container">
+             <div class="footer-bg eslimi-bg overflow-hidden mx-auto text-white p-3">
+                 <div class="row">
+       <div class="col-md-6 pb-2"><h3>ارتباط با ما</h3>
+       <p>تماس با دبیرخانه رویداد</p>
+       <br /><br />
+       <p><a class="text-warning" href="tel:02332300275">023-32300275-9</a></p>
+       <p>داخلی 151 خانم مهندس غلامی</p>
+       <br /><br /><p>رایانامه(ایمیل)</p>
+       <p><a class="text-warning" href="mailto:sstp.innovativeindustries@gmail.com">sstp.innovativeindustries@gmail.com</a></p><br />
+       
+       </div>
+       <div class="col-md-6">
+           <div style="float:left;">
+               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d954.9293020155975!2d54.92827287555318!3d36.385320661305556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f9d0789810d051d%3A0x111d672413f44a43!2z2YXYsdqp2LIg2LHYtNivINmI2KfYrdiv2YfYp9uMINmB2YbYp9mI2LEg2b7Yp9ix2qkg2LnZhNmFINmIINmB2YbYp9mI2LHbjA!5e0!3m2!1sen!2s!4v1695453058495!5m2!1sen!2s" width="320" height="275" style="border-radius:17px;max-width:100%" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+           </div>
+       </div>
+       </div>
+    </div><br />
+            &copy; 1402 - طراحی در <a class="text-warning" href="https://amihan.ir">Amihan.ir</a> --- <a asp-area="" asp-page="/Register-idea/registering">رویداد جاری</a>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="~/js/index.bundle.min.js"></script>
+@await RenderSectionAsync("Scripts", required: false)
+    <script src="~/js/site.js" asp-append-version="true"></script>
+        
+</body>
+</html>

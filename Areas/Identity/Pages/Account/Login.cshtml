@@ -1,0 +1,102 @@
+﻿@page
+@model LoginModel
+
+@{
+    ViewData["Title"] = "ورود";
+}
+@section Styles {
+    <style>
+        
+        main{
+    background-image: url(~/../../../Assets/bg-login.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-height: 80vh !important;
+    background-size: cover;
+    border-radius: 30px;
+    padding: 5em 2em;
+        }
+        div.login-class {
+            background: rgb(255 255 255 / 82%);
+    border-radius: 50px 10px;
+    padding: 25px;
+        }
+        p > a {
+                color: #092f31;
+    text-shadow: 0px 0px 3px #3eb8bf;
+        }
+    </style>
+}
+
+<div class="row">
+    <div class="col-md-4 mx-auto login-class">
+        <center><h1>@ViewData["Title"]</h1></center>
+        <section>
+            <form id="account" method="post">
+                 <hr />
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-floating">
+                    <input asp-for="Input.Email" class="form-control" autocomplete="username" aria-required="true" />
+                    <label asp-for="Input.Email" class="form-label">ایمیل</label>
+                    <span asp-validation-for="Input.Email" class="text-danger"></span>
+                </div>
+                <div class="form-floating">
+                    <input asp-for="Input.Password" class="form-control" autocomplete="current-password" aria-required="true" />
+                    <label asp-for="Input.Password" class="form-label">پسورد</label>
+                    <span asp-validation-for="Input.Password" class="text-danger"></span>
+                </div>
+                <div>
+                    <div class="checkbox">
+                        <label asp-for="Input.RememberMe" class="form-label">
+                            <input class="form-check-input" asp-for="Input.RememberMe" />
+                            @Html.DisplayNameFor(m => m.Input.RememberMe)
+                        </label>
+                    </div>
+                </div>
+                <div>
+                    <button id="login-submit" type="submit" class="w-100 btn btn-lg btn-primary">ورود</button>
+                </div>
+                <div>
+                    <p>
+                        <a id="forgot-password" asp-page="./ForgotPassword">فراموشی رمز عبور</a>
+                    </p>
+                    <p>
+                        <a asp-page="./Register" asp-route-returnUrl="@Model.ReturnUrl">ثبت نام به عنوان کاربر جدید</a>
+                    </p>
+                    @*<p>
+                        <a id="resend-confirmation" asp-page="./ResendEmailConfirmation">ارسال مجدد ایمیل تایید</a>
+                    </p>*@
+                </div>
+            </form>
+        </section>
+    </div>
+    @*<div class="col-md-6 col-md-offset-2">
+        <section>
+            <h4>به بخش رویداد پارک علم و فناوری استان سمنان خوش آمدید</h4>
+            <hr />
+            @{
+                if ((Model.ExternalLogins?.Count ?? 0) == 0)
+                {
+                    
+                }
+                else
+                {
+                    <form id="external-account" asp-page="./ExternalLogin" asp-route-returnUrl="@Model.ReturnUrl" method="post" class="form-horizontal">
+                        <div>
+                            <p>
+                                @foreach (var provider in Model.ExternalLogins!)
+                                {
+                                    <button type="submit" class="btn btn-primary" name="provider" value="@provider.Name" title="Log in using your @provider.DisplayName account">@provider.DisplayName</button>
+                                }
+                            </p>
+                        </div>
+                    </form>
+                }
+            }
+        </section>
+    </div>*@
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

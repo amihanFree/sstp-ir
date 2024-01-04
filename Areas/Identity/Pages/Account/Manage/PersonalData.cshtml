@@ -1,0 +1,25 @@
+﻿@page
+@model PersonalDataModel
+@{
+    ViewData["Title"] = "پاک کردن اکانت";
+    ViewData["ActivePage"] = ManageNavPages.PersonalData;
+}
+
+<h3>@ViewData["Title"]</h3>
+
+<div class="row">
+    <div class="col-md-6">
+        <p>ما اطلاعات اندکی را برای راستی آزمایی شما نگه میداریم، از این صفحه می توانید آنها را دانلود و یا پاک نمایید</p>
+        <p>
+            <strong>پاک کردن اطلاعات غیر قابل بازگشت است و تمامی اطلاعات مربوط به شما پاک خواهد شد</strong>
+        </p>
+    
+        <p>
+            <a id="delete" asp-page="DeletePersonalData" class="btn btn-danger">حذف</a>
+        </p>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

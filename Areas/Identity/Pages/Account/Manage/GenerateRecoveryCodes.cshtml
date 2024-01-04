@@ -1,0 +1,26 @@
+﻿@page
+@model GenerateRecoveryCodesModel
+@{
+    ViewData["Title"] = "تولید ریکاوری کد";
+    ViewData["ActivePage"] = ManageNavPages.TwoFactorAuthentication;
+}
+
+<partial name="_StatusMessage" for="StatusMessage" />
+<h3>@ViewData["Title"]</h3>
+<div class="alert alert-warning" role="alert">
+    <p>
+        <span class="glyphicon glyphicon-warning-sign"></span>
+        <strong>این کدها را در جای امنی نگهداری کنید</strong>
+    </p>
+    <p>
+      اگر دیوایس خود را گم کنید و این کدها را نداشته باشید نمی توانید به حساب خود وارد شوید
+    </p>
+    <p>
+        تغییر این کدها اتصال شما به دیوایستان را تحت تاثیر قرار نمیدهد و باید آن را بصورت دستی تغییر دهید <a asp-page="./ResetAuthenticator">ریست کردن کلیدها</a>
+    </p>
+</div>
+<div>
+    <form method="post">
+        <button class="btn btn-danger" type="submit">ایجاد کد ریکاوری</button>
+    </form>
+</div>
